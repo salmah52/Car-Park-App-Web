@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'mlsb';
+	src: url('../fonts/muli-demibold.eot');
+	src: url('../fonts/muli-demibold.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/muli-demibold.woff') format('woff'),
+	     url('../fonts/muli-demibold.ttf') format('truetype'),
+	     url('../fonts/muli-demibold.svg#muli-demibold') format('svg');
+}
+body ,p, h1,h2 {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-size-adjust: none;
+}
+img									{ border:none;}
+#wrapper 							{ min-width:320px; overflow:hidden; background:#fff;}
+#wrapper *							{ box-sizing:border-box;}
+
+/***** START CLASS ****/
+.wrapper 							{ width:100%; max-width:1100px; margin:0 auto; padding:0 50px; position:relative; z-index:20;}
+.clear								{ clear:both; display:block;}
+.sousTitre 							{ font:normal 22px/30px balr; letter-spacing:0.2px; position:relative; padding-bottom:12px; color:#d50002}
+.sousTitre-2 						{ font:normal 18px/30px balr; letter-spacing:0.2px; position:relative; padding-bottom:12px; color:#d50002; text-}
+.link 								{ height:50px; display:inline-block; font:normal 18px/50px balr; color:#d50002; padding:0 33px; border-radius:25px; background:#fff;}
+.link-blue 							{ height:50px; display:inline-block; font:normal 18px/50px balr; color:#d50002; padding:0 33px; border-radius:25px; background:#9ddcf6;}
+img									{ border:none;}
+#wrapper 							{ min-width:320px; overflow:hidden; background:#fff;}
+#wrapper *							{ box-sizing:border-box;}
+.wrapper 							{ padding-left:20px; padding-right:20px}
+.pageContent						{ width:100%; position:relative;}
+.breadCrumb 						{ padding:0; padding:30px 0 65px; letter-spacing:0; font-size:0}
+.breadCrumb a 						{ font-size:15px; line-height:25px; letter-spacing:0.2px; color:#000; margin-right:45px;}
+.breadCrumb a:after 				{ content:""; display: block; width:20px; height:20px; border-radius:50%; background:url(../images/arrow-bread.svg) center no-repeat #6fb4d5; position:absolute; right:-33px; top:50%; margin-top:-11px;}
+.breadCrumb .active					{ color:#d50002; margin:0;}
+.breadCrumb .active:after 			{ display:none}
+
+.blocTitre 							{ padding-bottom:73px;}
+.titrePage 							{ font:normal 30px/25px balr; text-transform:uppercase;padding-bottom: 10px;}
+.blocTitre .sousTitre 				{ font:normal 22px/30px balr; color:#d50002; padding-bottom:11px;}
+.chapo 								{ font:normal 16px/26px mlb; letter-spacing:0.2px}
+
+
+@media (min-width:1201px) {
+    .pageContent p a:hover:after,
+    .pageContent li a:hover:after		{ width:0; margin-left:100%;}
+    .breadCrumb a:hover					{ color:#d50002;}
+    .servicePage li a:hover 			{ color:#000}
+    .servicePage li a:hover:before 		{ left:10px}
+    }
+    @media (max-width:800px) {
+    .servicePage ul 					{ padding:40px 0; margin:0}
+    .servicePage ul li a:before 		{ display:none}
+    .servicePage ul li 					{ width:auto; display:block; padding:0}
+    .servicePage ul li a 				{ padding:25px 20px}
+    .servicePage ul li:nth-child(2) 	{ padding:20px 0}
+    }
+    @media (max-width:600px) {
+    .titrePage 							{ font-size:18px; padding-bottom:5px;}
+    .breadCrumb 						{ display:none}
+    .blocTitre 							{ padding:20px 0 31px}
+    .sousTitre 							{ font-size:18px; line-height:30px}
+    .blocTitre .sousTitre 				{ font-size:18px; line-height:26px}
+    .chapo 								{ font-size:15px; line-height:26px}
+    }
+    /***** END PAGES INTERIEURES ****/
+    
+    
+    /***** START PHOTO TEXTE ****/
+    .photoTexte 						{ font-size:0; letter-spacing:0; padding-bottom:76px;}
+    .photoTexte>div 					{ width:50%; display:inline-block; vertical-align:middle; letter-spacing:normal; position:relative}
+    .photoTexte .photo 					{ line-height:0;}
+    .photoTexte .photo img				{ width:100%; height:auto; border-radius:14px}
+    .photoTexte .texte                  { padding-left:60px; font-size:15px; letter-spacing:0.2px}
+    .photoTexte .texte p 				{ padding-bottom:27px;}
+    .photoTexte .texte ul 				{ margin-bottom:0;}
+    .photoTexte .texte 					{ position:relative}
+    .photoTexte.reverse .texte          { right:50%; padding-left:0; padding-right:60px;}
+    .photoTexte.reverse .photo          { left:50%;}
+    
+    @media (max-width:1200px) {
+    .photoTexte .texte                  { padding-left:40px;}
+    .photoTexte .photo 					{ padding:0}
+    .photoTexte.reverse .photo 			{ padding-right:0}
+    .photoTexte.reverse .texte          { padding-left:0; padding-right:40px;}
+    }
+    @media (max-width:760px) {
+    .photoTexte>div            			{ width:auto; display:block}
+    .photoTexte .texte                  { padding-left:0;}
+    .photoTexte .photo 					{ padding-right:0; margin-bottom:33px; padding-left:0}
+    .photoTexte .photo img				{ width:100%; height:340px; object-fit:cover;}
+    .photoTexte.reverse .texte          { right:auto; padding-right:0;}
+    .photoTexte.reverse .photo          { left:auto;}
+    .photoTexte 						{ padding:0 0 26px}
+    }
+    @media (max-width:600px) {
+    .photoTexte .texte 					{ position:static}
+    .roundBloc 							{ top:20px; right:40px; left:auto}
+    .photoTexte .photo  				{ width:auto}
+    .photoTexte .photo img				{ width:100%; height:auto; object-fit:fill;}
+    .photoTexte .texte li,
+    .photoTexte .texte p 				{ font-size:14px; line-height:22px}
+    }
+    
+    /***** END PHOTO TEXTE ****/
+    .sousTitre-2 						{ font:normal 18px/30px balr; letter-spacing:0.2px; position:relative; padding-bottom:12px; color:#d50002; text-}
+    
+.answer {
+    display: none;
+}
+.question{
+    cursor: pointer;
+    color: #304173;
+
+}
+.answer {
+    color: #304173;
+}
